@@ -38,7 +38,7 @@ export const CITY_PICKER_VALUE_ACCESSOR: any = {
              class="iti-input" [type]="type"
              [placeholder]="placeholder"
              [(ngModel)]="_editTag"
-             (blur)="_blur()"
+             (blur)="keyAddTag()"
              (keyup.backspace)="keyRemoveTag($event); false"
              (keyup)="separatorStrAddTag()"
              (keyup.enter)="keyAddTag()">
